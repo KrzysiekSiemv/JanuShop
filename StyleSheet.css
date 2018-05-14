@@ -1,0 +1,163 @@
+﻿.tlo {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.PayPal {
+    padding: 15px 0px 15px;
+}
+
+.tlo > * {
+    flex: 1 100%;
+}
+
+header {
+    background: black;
+    color: white;
+    padding: 15px;
+}
+
+.czcionka {
+    font-family: "Arial";
+}
+
+.logo {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.Kontakt h4 {
+    padding: 0px 60px;
+    text-align: left;
+
+}
+
+ul li {
+    float: inherit;
+    display: inline-block;
+}
+
+li a, .dropbtn {
+    display: block;
+    font-family: "Arial";
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    min-width: 225px;
+    max-width: 225px;
+    font-size: 12px;
+    margin: 10px;
+    padding: 14px 16px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-color: white;
+}
+
+.dropbtn {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: #33cc33;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+.dropdown-content {
+    background-color: rgb(58, 64, 69, 0.7);
+    display: none;
+    position: absolute;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    min-width: 300px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav {
+    background: #111;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+section {
+    background: rgb(58, 64, 69);
+    display: block;
+    color: white;
+}
+
+section p {
+    color: rgb(58, 64, 69);
+}
+
+article li a {
+    display: block;
+    background: rgb(58, 64, 69);
+    margin: 10px auto;
+}
+
+footer li a {
+    display: block;
+    background: rgb(58, 64, 69);
+    margin: 10px auto;
+}
+
+article {
+    background: rgb(100, 106, 111);
+    display: block;
+    color: white;
+    font-family: 'Arial';
+    text-align: center;
+}
+
+article p {
+    font-size: 10px;
+}
+
+article img {
+    padding: 16px;
+}
+
+footer {
+    background: black;
+    color: white;
+}
