@@ -1,163 +1,182 @@
-﻿.tlo {
-    display: flex;
-    flex-flow: row wrap;
+* {
+	margin: 0px;
+}
+
+body {
+	font-family: "FantasqueSansMonoRegular";
+	width: 100%;
+	background-color: #1e1e1e;
+}
+
+/* Header */
+
+.header {
+	box-sizing: border-box;
+	background-color: #1e1e1e;
+	color: white;
+	padding: 24px;
+	float: left;
+	height: 200px;
+	width: 33%;
+}
+
+	.header h1 {
+		font-size: 48px;
+		font-style: italic;
+	}
+	
+	.header h4:hover {
+		color: orange;
+	}
+
+	.header img {
+		height: 128px;
+		float: left;
+		margin: 8px;
+		text-align: left;
+		padding: 8px;
+		padding-right: 24px;
+	}
+
+/* Panel */
+
+.panel{
+	box-sizing: border-box;
+	background-color: white;
+	width: 67%;
+	height: 200px;
+	float: right;
+}
+
+.navigation {
+	background-color: #1e1e1e;
+	float: bottom;
+	padding: 14px 16px;
+	height: 32px;
+}
+
+	.navigation a {
+		text-align: center;
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+		float: right;
+	}
+
+	.navigation a:hover {
+		background-color: orange;
+	}
+
+	.navigation button {
+		font-family: "FantasqueSansMonoRegular";
+		text-align: center;
+		background-color: transparent;
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+		float: right;
+	}
+
+	.navigation button:hover {
+		background-color: orange;
+	}
+
+/* Lewa strona */
+
+.leftside {
+	padding: 24px;
+	background-color: #1e1e1e;
+	color: white;
+	width: 33%;
+	float: left;
+	box-sizing: border-box;
+}
+
+	.leftside a {
+		text-align: left;
+		display: block;
+		color: white;
+		font-size: 18px;
+		text-decoration: none;
+	}
+
+	.leftside a:hover {
+		color: orange;
+	}
+
+/* Prawa strona */
+
+.rightside {
+	background-color: white;
+	width: 67%;
+	float: right;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.card {
+	background-color: white;
+	text-align: center;
+	float: right;
+	width: 100%;
+	margin: 16px 0px 24px 0px; 
+}
+
+	.card img {
+		width: 256px;
+	}
+
+	.card h3 {
+		padding: 14px 16px;
+		color: black;
+		font-size: 24px;
+	}
+
+	.card button {
+		text-decoration: none;
+		color: white;
+		background-color: green;
+		padding: 14px 16px;
+	}
+
+	.card button:hover{
+		background-color: white;
+		color: green;
+	}
+
+/* Stopka */
+
+.stopka {
+	margin-top: 16px;
+	background-color: #1e1e1e;
+	color: white;
+	padding: 24px;
+	text-align: center;
+	float: left;
+	width: 97.45%;
+}
+
+/* Ikony */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 64px;
     text-align: center;
-}
-
-.PayPal {
-    padding: 15px 0px 15px;
-}
-
-.tlo > * {
-    flex: 1 100%;
-}
-
-header {
-    background: black;
-    color: white;
-    padding: 15px;
-}
-
-.czcionka {
-    font-family: "Arial";
-}
-
-.logo {
-    padding: 10px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.Kontakt h4 {
-    padding: 0px 60px;
-    text-align: left;
-
-}
-
-ul li {
-    float: inherit;
-    display: inline-block;
-}
-
-li a, .dropbtn {
-    display: block;
-    font-family: "Arial";
     text-decoration: none;
-    color: white;
-    text-align: center;
-    min-width: 225px;
-    max-width: 225px;
-    font-size: 12px;
-    margin: 10px;
-    padding: 14px 16px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-color: white;
+    margin: 5px 2px;
 }
 
-.dropbtn {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-    li a:hover, .dropdown:hover .dropbtn {
-        background-color: #33cc33;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+    .fa:hover {
+        opacity: 0.7;
     }
 
-.dropdown-content {
-    background-color: rgb(58, 64, 69, 0.7);
-    display: none;
-    position: absolute;
-    min-width: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    z-index: 1;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    min-width: 300px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-nav {
-    background: #111;
-    display: block;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-section {
-    background: rgb(58, 64, 69);
-    display: block;
+.fa-facebook {
+    background: #3B5998;
     color: white;
 }
 
-section p {
-    color: rgb(58, 64, 69);
-}
-
-article li a {
-    display: block;
-    background: rgb(58, 64, 69);
-    margin: 10px auto;
-}
-
-footer li a {
-    display: block;
-    background: rgb(58, 64, 69);
-    margin: 10px auto;
-}
-
-article {
-    background: rgb(100, 106, 111);
-    display: block;
-    color: white;
-    font-family: 'Arial';
-    text-align: center;
-}
-
-article p {
-    font-size: 10px;
-}
-
-article img {
-    padding: 16px;
-}
-
-footer {
-    background: black;
+.fa-github {
+    background: #24292e;
     color: white;
 }
